@@ -64,7 +64,9 @@ body{
     gap: 5px;
 }
 .cards_para{
-    font-size: 12px;
+    font-size: 16px;
+    max-width: 20rem;
+    margin: auto;
 }
 
 .authorcards {
