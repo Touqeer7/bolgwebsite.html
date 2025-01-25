@@ -210,13 +210,13 @@ h3{
 .boxmiddle{
     display: flex;
     gap: 1rem;
+    transform: color 0.01s;
 }
 button:hover {
-    background-color: #000000;
+    background-color:#f7bc3e;
     color: #ffffff;
     cursor: pointer;
 }
-
 /* footer */
 .footer {
     background-color: #333;
@@ -298,16 +298,21 @@ button:hover {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
+.boxmiddle:hover {
+    color: #000000;
+}
+.boxright{
+    border: none;
+    border-radius: 0.375rem;
+    background-color: #6551cb;
+    color: white;
+    transform: all 0.1s;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+}
+.boxright:hover{
+    background-color: #5254f8;
+}
 
 @media (max-width:1580px){
     .cards{
