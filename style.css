@@ -196,6 +196,24 @@ h3{
     font-size: 1.7rem;
     color: black;
 }
+.mainbox{
+    display: flex;
+    justify-content: space-between;
+    width: 106rem;
+    height: 5rem;
+    background-color: white;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+}
+.boxmiddle{
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+
+
 
 
 
