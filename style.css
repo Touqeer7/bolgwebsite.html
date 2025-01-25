@@ -174,8 +174,8 @@ h3{
 .button1{
     background-color: #FF9800;
     height: 3.5rem;
-    width: 10rem;
-    font-size: 1.2rem;
+    width: 12rem;
+    font-size: 0.8rem;
     font-weight: bold;
     color: white;
     border: none;
@@ -480,6 +480,8 @@ h3{
     padding: 50px 0;
     animation: fadeIn 1.5s ease-in;
     width: 108.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
 }
 
 .footer-content {
