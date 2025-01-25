@@ -234,7 +234,7 @@ h3{
 
 /* newnavbar */
 .mainnavbar {
-    width: 76.8%;
+    width: 108.5rem;
     background: linear-gradient(90deg, #ffffff, #f0f4ff);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -391,30 +391,37 @@ h3{
 }
 
 
-@media (max-width:1580px){
-    .cards{
-    grid-template-columns: repeat(3,1fr);
-    }
-    .upperpart{
-        width: 70rem;
-    }
-    .navbar{
-        width: 80rem;
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem;
     }
 
-}
-@media (max-width:1160px){
-    .cards{
-    grid-template-columns: repeat(2,1fr);
+    .h1 {
+        font-size: 2rem;
+    }
+
+    .headerpara {
+        font-size: 1rem;
+    }
+
+    .mainbox {
+        flex-direction: column;
+        gap: 1rem;
     }
 }
-@media (max-width:795px){
-    .cards{
-    grid-template-columns: repeat(1,1fr);
+
+@media (max-width: 480px) {
+    .pagination {
+        flex-direction: column;
+        gap: 0.5rem;
     }
-}
-@media (max-width: 768px) {
-    .cards {
-        grid-template-columns: 1fr;
+
+    .items {
+        padding: 0.75rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
     }
 }
