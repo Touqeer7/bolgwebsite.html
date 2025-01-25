@@ -70,7 +70,6 @@ body{
     width:21.225rem;
     height: auto;
     max-height: 15rem;
-    overflow:scroll;
 }
 .cards_tittle{
     text-align: center;
@@ -143,7 +142,6 @@ a{
     align-items: center;
     justify-content: center;
     border-radius: 2rem;
-    overflow: auto;
 }
 .name{
     display: flex;
@@ -210,6 +208,13 @@ h3{
     .cards{
     grid-template-columns: repeat(3,1fr);
     }
+    .upperpart{
+        width: 70rem;
+    }
+    .navbar{
+        width: 80rem;
+    }
+
 }
 @media (max-width:1160px){
     .cards{
