@@ -42,13 +42,15 @@ body{
 }
 .cards{
     display: grid;
+    max-width: 108.5rem;
+    width: 100%;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
     background-color: rgb(255, 255, 255);
     /* border: 0.25rem solid black; */
     border-radius: 0.75rem;
     gap: 1.5rem;
-    /* height: auto; */
+    height: auto;
 }
 .items{
     /* border: 2px solid rgb(62, 155, 202); */
@@ -66,11 +68,18 @@ body{
     transform: scale(1.05);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
-.imag{    
+/* .imag{    
     border-radius: 0.625rem;
     width:21.225rem;
     height: auto;
     max-height: 15rem;
+} */
+.imag {
+    border-radius: 0.625rem;
+    width: 100%; /* Full width for responsiveness */
+    max-width: 21.225rem;
+    max-height: 15rem;
+    object-fit: cover;
 }
 .cards_tittle{
     text-align: center;
@@ -125,7 +134,7 @@ body{
     font-weight: bold;
     color: #666;
     border: 0.313rem solid beige;
-    border-radius: 0.031;
+    border-radius: 0.031 px;
     max-width: 9rem;
     width: 6rem;
     text-align: center;
@@ -133,6 +142,34 @@ body{
 a{
     text-decoration: none;
 }
+@media (max-width: 1700px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1300px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fill, minmax(300px, auto));
+    }
+}
+
+
+
+
+
+
+
+
+
 .navbar{
     width: 90%;
     max-width: 108.5rem;
@@ -393,7 +430,7 @@ h3{
     border: 1px solid #ccc;
     border-radius: 20px 0 0 20px;
     outline: none;
-    transition: all }
+    transition: all; }
 #searchButton {
         padding: 5px 10px;
         border: 1px solid #ccc;
@@ -403,7 +440,7 @@ h3{
         border-radius: 0 20px 20px 0;
         cursor: pointer;
         transition: all 0.3s ease;
-}
+        }
     
 #searchButton:hover {
         background-color: #0056b3;
@@ -419,57 +456,23 @@ h3{
             background-color: #0056b3;
         }
 /* media queries for newnavbar */
-@media (max-width: 768px) {
-.mainbox {
-    flex-direction: column;
-    align-items: flex-start;
-}
-        
-.boxmiddle {
-    margin: 10px 0;
-}
-        
-.boxmiddle a {
-    display: block;
-    margin: 5px 0;
-}
-        
-.searchbox {
-    flex-direction: column;
-    align-items: flex-start;
-}
-        
-#navbarSearch, #searchButton {
-    width: 100%;
-    margin: 5px 0 ;}
-}
-@media (max-width: 480px) {
-.mainnavbar {
-        padding: 5px;
-}
-
-.boxleft img {
-        width: 30px;
-        height: 30px;
-        margin-right: 5px;
-}
-
-.boxmiddle a {
-        margin: 5px 0;
-}
-
-#navbarSearch {
-        padding: 5px;
-        font-size: 14px;
-}
-
-#searchButton {
-        padding: 5px;
-}
-
-#buttonmainnavbar {
-        padding: 5px 10px;}
-}    
+   
+  @media (max-width: 1460px) {
+    .mainnavbar{
+        height: 80px;
+    }
+    .mainbox{
+        height: 80px;
+    }
+    .boxmiddle{
+        display: flex;
+        gap: 0.1px;
+        justify-content: space-around;
+    }
+    #navbarSearch{
+        display: none;
+    }
+  }
 
 
 
@@ -584,7 +587,7 @@ h3{
     }
 
     .items {
-        padding: 0.75rem;
+        
     }
 
     .footer-content {
