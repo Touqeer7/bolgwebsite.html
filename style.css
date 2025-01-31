@@ -256,6 +256,7 @@ h3{
 #b1b{
     font-size: 2.2rem;
 }
+
 @media (max-width: 768px) {
     .navbar {
         padding: 1.5rem;
@@ -482,7 +483,23 @@ h3{
         display: none;
     }
   }
+  @media (max-width: 1250px) {
+    .mainnavbar{
+        overflow-x: scroll;
+        border-radius: 9 px;
+    }
+    .mainbox{
+        display: flex;
+        overflow-x: scroll;
+        width: 100%;
+    }
+}
 
+@media (max-width: 1250px) {
+#buttonmainnavbar{
+    display: none;
+}
+}
 
 
 /* footer */
